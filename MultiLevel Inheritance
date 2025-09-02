@@ -1,0 +1,33 @@
+package Com.Yasasvi;
+class X{
+	public void methodX() {
+		System.out.println("HELLO");
+	}
+}
+class Y  extends X{
+	public void methodY() {
+		System.out.println("EVERYONE");
+	}
+}
+class Z extends Y{
+	public void methodZ() {
+		System.out.println("MY NAME IS XYZ");
+	}
+}
+public class MultilevelInheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Z z = new Z();
+		z.methodX();
+		z.methodY();
+		z.methodZ();
+
+	}
+
+}
+
+OUTPUT:
+HELLO
+EVERYONE
+MY NAME IS XYZ
