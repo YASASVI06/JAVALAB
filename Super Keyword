@@ -1,0 +1,38 @@
+package Com.Yasasvi;
+class GP{
+	 GP()
+	 {
+		 //super();
+		 System.out.println("GP CLASS");
+	 }
+}
+class P extends GP{
+	P()
+	{
+		//super();
+		System.out.println("P CLASS");
+	}
+}
+class S extends P{
+	S()
+	{
+		super();
+	    System.out.println("C CLASS");
+	}
+}
+public class SuperKeyword {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		S s = new S();
+		
+	}
+
+}
+
+
+OUTPUT:
+GP CLASS
+P CLASS
+C CLASS
+
